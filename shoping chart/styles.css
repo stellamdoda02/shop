@@ -1,0 +1,175 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    background-color: rgba(203, 182, 104, 0.599);   
+}
+
+/* CSS */
+.shop-item-image {
+  /* Set a fixed aspect ratio (e.g., 16:9) */
+  /* This ensures that the images maintain the same aspect ratio */
+  width: 100%;
+  height: 100%;
+  
+
+  /* Specify the dimensions of the images */
+  /* You can adjust these values as needed */
+  max-width: 100%;
+  height: 100%;
+
+ 
+}
+
+
+
+
+
+
+
+.navbar{
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  background-color:rgb(126, 76, 9)
+  
+}
+
+#category{
+  padding: 5% 6%;
+}
+#product-cards{
+  padding: 5% 10%;
+}
+
+#footer{
+ margin-bottom: 2%;
+ margin-top: 2%;
+ background-color: rgb(56, 29, 32);   
+  
+}
+.filter-btns{
+  text-align: left;
+}
+.filter-btn{
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.filter-btn::after{
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #555;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out
+}
+.filter-btn:hover{
+  color: #555;
+}
+.filter-btn:hover::after{
+  width: 100%;
+}
+/* active button */
+.active-btn{
+  color: #b31d1d;
+}
+.active-btn::after{
+  width: 100%;
+}
+
+.canvas-title{
+  text-align: center;
+}
+
+
+
+/*     Shopping Cart     */
+
+ .btn-purchase{
+   text-align: center;
+   margin: auto;
+   padding: 2%;
+   width: 50%;
+ }
+
+ #shopping-cart{
+   padding: 5% 5%;
+ }
+
+ .cart-total{
+   text-align: right;
+   font-size: 1.3rem;
+ }
+
+.up-icon{
+   color: rgb(1, 21, 6);
+   position: fixed;
+   float: right;
+   z-index: 1;
+   left: 95%;
+   top: 85%;
+   font-size: 2rem;
+ }
+
+ .background-image {
+  background-image: url('back7.png'); /* Replace 'your-image.jpg' with your image file path */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust the height as needed */
+  width: 1560px;
+  position: relative;
+}
+
+.text-overlay {
+  position: left;
+  top: 70%;
+  left: 70%;
+  transform: translate(-120%, -120%);
+  color: rgb(39, 2, 2);
+  font-size: 70px; /* Adjust the font size as needed */
+  text-align: left;
+}
+
+.nav-item .nav-link {
+  color: black;
+}
+
+
+.custom-btn {
+  background-color: rgb(159, 104, 104);
+  border-color: rgb(30, 2, 2);
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Optional: Adjust as per your layout preference */
+}
+
+.container img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: 20; /* Maintain aspect ratio */
+  flex: 16; /* Distribute space evenly among images */
+}
